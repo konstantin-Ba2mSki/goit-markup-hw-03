@@ -1,3 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* root */
 
 :root {
@@ -5,8 +28,8 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --logo-color: #000000;
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 }
 
 /* body */
@@ -31,6 +54,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   cursor: pointer;
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -43,10 +67,36 @@ body {
   text-decoration: none;
 }
 
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /* navbar */
 
 .site-nav {
+  padding-left: 0;
+  display: flex;
   list-style: none;
+}
+
+.site-nav-item {
+  margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0;
 }
 
 .site-nav-link {
@@ -54,6 +104,9 @@ body {
   font-weight: 500;
   line-height: 1.1;
   text-decoration: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: block;
 }
 
 .site-nav-link:hover,
@@ -76,7 +129,16 @@ body {
 }
 
 .auth-nav {
+  padding-left: 0;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
   list-style: none;
+}
+
+.auth-nav-item {
+  display: inline-block;
+  margin-left: 12px;
 }
 
 .auth-nav-link:hover,
@@ -88,6 +150,10 @@ body {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -96,6 +162,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
 }
 
 /* herob-btn */
@@ -127,6 +194,28 @@ body {
   margin: -1px;
 }
 
+.item-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-element {
+  outline: 2px solid turquoise;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
 .features-item {
   list-style: none;
 }
@@ -136,11 +225,13 @@ body {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 /* section2 */
 
 .work-title {
+  color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
