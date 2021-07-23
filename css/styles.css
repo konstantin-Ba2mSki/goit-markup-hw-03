@@ -254,6 +254,7 @@ body {
 .works {
   display: flex;
   padding-left: 0;
+  justify-content: space-between;
 }
 
 .works-item {
@@ -382,9 +383,6 @@ body {
 }
 
 /* galery */
-
-.card-set {
-}
 
 .gallery {
   padding: 0;
