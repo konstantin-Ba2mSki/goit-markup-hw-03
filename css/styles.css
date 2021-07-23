@@ -396,18 +396,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  outline: 2px solid turquoise;
 }
 
 .gallery-item {
   list-style: none;
-  outline: 2px solid turquoise;
 }
 
 .gallery > .gallery-item {
-  flex-basis: calc(100% / 3 -30px);
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.card-content {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding: 20px 24px 20px 24px;
 }
 
 .gallery-title {
@@ -417,12 +421,12 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  outline: 2px solid turquoise;
 }
 
 .gallery-text {
   color: var(--primary-text-color);
   font-size: 16px;
+  margin-top: 4px;
   line-height: 1.8;
 }
 
