@@ -416,7 +416,6 @@ body {
 .card-content {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
