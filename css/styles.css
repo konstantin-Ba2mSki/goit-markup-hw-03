@@ -16,7 +16,6 @@ h5,
 h6,
 p {
   margin: 0;
-  margin-bottom: 0;
 }
 
 ul {
@@ -157,7 +156,7 @@ body {
   display: inline-block;
 }
 
-.auth-nav-link:nth-last-child(1) {
+.auth-nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
