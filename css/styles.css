@@ -325,6 +325,13 @@ body {
   cursor: pointer;
 }
 
+.footer .logo-studio {
+  margin-bottom: 20px;
+}
+.contacts {
+  margin: 0;
+}
+
 .contact-item {
   color: #ffffff;
   font-style: normal;
@@ -335,7 +342,7 @@ body {
   margin-bottom: 9px;
 }
 
-.contact-item-link {
+.contact-item .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
@@ -352,14 +359,17 @@ body {
 /* filter */
 
 .filter {
-  text-align: center;
-  padding-left: 0;
+  justify-content: center;
+  display: flex;
   margin-bottom: 50px;
 }
 
 .filter-item {
-  display: inline-block;
   list-style-type: none;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -371,7 +381,6 @@ body {
   line-height: 1.6;
   border-radius: 4px;
   border: none;
-  margin: 0 4px;
   padding: 6px 22px;
 }
 
@@ -388,23 +397,18 @@ body {
 
 .gallery {
   padding: 0;
-  padding-bottom: 94px;
   margin: 0;
   margin-top: -30px;
   margin-left: -30px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .gallery-item {
-  list-style: none;
-}
-
-.gallery > .gallery-item {
   margin-top: 30px;
   margin-left: 30px;
+  list-style: none;
 }
 
 .card-content {
@@ -430,5 +434,6 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
