@@ -156,7 +156,7 @@ body {
   display: inline-block;
 }
 
-.auth-nav-link:not(:last-child) {
+.auth-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -246,6 +246,11 @@ body {
   padding-top: 0;
 }
 
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .work-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -268,17 +273,19 @@ body {
   display: flex;
 }
 
+.team-item {
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
-  box-shadow: var(--card-shadow);
-  list-style: none;
 }
 
 .team-title {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
   text-align: center;
 }
 
@@ -306,7 +313,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .logo-studio {
@@ -319,14 +325,13 @@ body {
   cursor: pointer;
 }
 
-.contacts {
-  padding: 0;
-}
-
 .contact-item {
   color: #ffffff;
   font-style: normal;
   list-style: none;
+}
+
+.contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -335,7 +340,6 @@ body {
   font-style: normal;
   text-decoration: none;
   list-style: none;
-  margin-bottom: 9px;
 }
 
 .contact-item .link:hover,
