@@ -237,6 +237,10 @@ body {
 
 /* section2 */
 
+.floor {
+  background-color: var(--bg-color);
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
